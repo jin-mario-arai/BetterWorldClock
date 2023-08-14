@@ -141,6 +141,7 @@ while True:
 		# If slider value is not 0, then do nothing
 	elif event == '-reset-':
 		reset_click()
+		window['-reset-'].update(disabled=True)
 		update_clock(roundup=False, diff=datetime.timedelta())
 	elif event is None:
 		break
