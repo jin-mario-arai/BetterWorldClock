@@ -125,6 +125,9 @@ while True:
 
 	event, values = window.read(timeout=30000, timeout_key='-timeout-')
 
+	if event is None:
+		break
+
 	if values['-slider-'] == 0.0:
 		window['-reset-'].update(disabled=True)
 		update_clock(roundup=False, diff=datetime.timedelta())
@@ -143,7 +146,5 @@ while True:
 		reset_click()
 		window['-reset-'].update(disabled=True)
 		update_clock(roundup=False, diff=datetime.timedelta())
-	elif event is None:
-		break
 
 window.close()
