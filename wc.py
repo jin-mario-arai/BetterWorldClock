@@ -11,7 +11,7 @@ pastmax=-2880
 futuremax=2880
 logger = logging.getLogger("BetterWorldClock")
 logging.basicConfig(filename='wc.log', level=logging.INFO)
-tzlist = ['US/Pacific','Asia/Tokyo','Asia/Shanghai', 'Etc/Greenwich', 'Asia/Kolkata', 'Etc/UTC']
+tzlist = ['US/Pacific','US/Eastern', 'Asia/Tokyo','Asia/Shanghai', 'Asia/Kolkata', 'Etc/UTC']
 
 
 
