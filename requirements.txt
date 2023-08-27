@@ -1,0 +1,4 @@
+numpy
+PySimpleGUI
+pytz
+setuptools
